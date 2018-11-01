@@ -34,7 +34,7 @@ def compile2so(src_path, build_dir, *args, **kwargs):
                                   excepts=kwargs.get('excepts'),
                                   copies=kwargs.get('copies')))
     os.chdir(build_src_dir)
-    setup(ext_modules=cythonize(module_list),
+    setup(ext_modules=cythonize(module_list, compiler_directives={'language_level': 3}),
           script_args=["build_ext", "-b", build_dir, "-t", build_tmp_dir])
 
     return True
