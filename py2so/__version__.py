@@ -1,0 +1,9 @@
+__title__ = 'py2so'
+__version__ = '0.1.0'
+__description__ = 'py2so'
+__keywords__ = 'py2so cython'
+__url__ = 'https://github.com/hypc/py2so'
+__author__ = 'hypc'
+__author_email__ = 'h_yp00@163.com'
+__license__ = 'MIT'
+__copyright__ = 'Copyright 2017, %s' % __author__
